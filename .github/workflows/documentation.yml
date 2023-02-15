@@ -16,7 +16,8 @@ jobs:
         yarn install
         yarn build
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@v4.2.2
+      uses: JamesIves/github-pages-deploy-action@latest
       with:
         branch: gh-pages
         folder: build
+        token: ${{ secrets.ACCESS_TOKEN }}
