@@ -1,24 +1,22 @@
-name: Deploy Github pages
+name: Deploy To Github pages
 on:
   push:
-    branches:
+    branchs:
       - main
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@v2
       with:
         persist-credentials: false
     - name: Install and Build
       run: |
-        npm install
-        npm run-script build 
+        yarn install
+        yarn build
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
+      uses: JamesIves/github-pages-deploy-action@v4.2.2
       with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: main
-        FOLDER: build
-        BUILD_SCRIPT: npm install && npm run build
+        branch: gh-pages
+        folder: build
