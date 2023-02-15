@@ -18,7 +18,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'wangwxiaming', // Usually your GitHub org/user name.
+  organizationName: 'BruceWang99', // Usually your GitHub org/user name.
   projectName: 'fullStackJsDoc', // Usually your repo name.
 
   onBrokenLinks: 'throw',
