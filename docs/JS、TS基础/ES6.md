@@ -144,5 +144,3 @@ get(target, key, receiver)
 
 		- get set 关键字定义的方法
 		- TypeScript不允许同时装饰一个成员的get和set访问器
-
-*XMind: ZEN - Trial Version*

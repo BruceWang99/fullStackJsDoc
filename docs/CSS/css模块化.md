@@ -40,5 +40,3 @@
 
 - 通过构建工具的帮助，可以将 class的名字或者选择器的名字作用域化。
 - vue官方默认的模式
-
-*XMind: ZEN - Trial Version*

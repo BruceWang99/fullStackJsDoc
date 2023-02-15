@@ -42,5 +42,3 @@
 		- postcss-cssnext
 
 			- 使用下个版本的css语法
-
-*XMind: ZEN - Trial Version*

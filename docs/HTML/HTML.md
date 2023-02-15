@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 # HTML
 
 ## src和href的区别
@@ -90,7 +93,7 @@
 
 ### 用什么类型来解析文档 (html xhtml)
 
-### <!doctype html>
+### <\!doctype html>
 
 - 用最新的HTML标准解析页面
 - 不写会进入混杂模式
@@ -104,7 +107,7 @@
 ### viewport
 
 - 适配移动端
-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+- meta标签  name="viewport" content="width=device-width initial-scale=1 maximum-scale=1
 - 配置文档宽度、缩放比例这些
 
 ### seo优化相关的
@@ -144,7 +147,7 @@
 
 ### 定义文档的头部
 
-###  <title> 定义文档的标题 唯一必需的元素
+###  title 定义文档的标题 唯一必需的元素
 
 ## HTML5的离线储存怎么使用, 它的工作原理是什么
 
@@ -210,5 +213,3 @@
 ### app webview内不支持
 
 - 可使用touchstart  touchmove touchend代替
-
-*XMind: ZEN - Trial Version*

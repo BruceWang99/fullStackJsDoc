@@ -345,5 +345,3 @@
 	- 不变性
 
 		- 都不安全 老老实实
-
-*XMind: ZEN - Trial Version*

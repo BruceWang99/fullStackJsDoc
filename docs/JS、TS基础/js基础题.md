@@ -157,5 +157,3 @@
 - removeChild
 - insertBefore
 - appendChild
-
-*XMind: ZEN - Trial Version*

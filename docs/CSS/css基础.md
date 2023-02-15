@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 ## css基础
 
 ### css选择器和优先级
@@ -253,5 +256,3 @@
 - 设备像素比
 
 	- 物理像素/逻辑像素
-
-*XMind: ZEN - Trial Version*

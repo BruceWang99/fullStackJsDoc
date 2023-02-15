@@ -17,5 +17,3 @@
 - bind不立即执行
 
 ### 手写call、apply、bind函数
-
-*XMind: ZEN - Trial Version*
