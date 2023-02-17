@@ -58,6 +58,18 @@ const config = {
     ],
   ],
 
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      ({
+        hashed: true, // 添加hash查询
+        language: ["en", "zh"],
+        highlightSearchTermsOnTargetPage: true, // 高亮搜素词
+        indexBlog: false, // 不检索博客
+      }),
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
