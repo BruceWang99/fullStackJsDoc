@@ -1,0 +1,53 @@
+# Appsmith（PagePlug）开发笔记
+
+## 小程序组件开发
+
+### 小程序组件开发流程
+
++ CLI 命令生成Widget文件夹结构
+
+```
+cd app/client && yarn generate:widget (这个命令好像只支持web版本的)
+```
+这个命令目前没有直接放到小程序目录，需要手动移动到app/client/src/widgets/taro目录
+
++ 小程序组件注册
+app/taro/src/utils/WidgetRegistry.tsx 这个目录引入新组件注册
+
+
+
+## 线上部署
+
+### nginx 反向代理+ssl配置
+```
+server
+    {
+        listen 80;
+        server_name www.test.com;
+        access_log  /www/wwwlogs/access.log;
+        return 301 https://$server_name$request_uri; #强制https
+        location / {
+            proxy_pass http://localhost:8080; #反向代理
+        }
+        access_log  /www/wwwlogs/access.log;
+    }
+    server
+    {
+        listen 443 ssl; #SSL 默认访问端口号为 443
+        server_name www.test.com;#请填写绑定证书的域名
+        location / {
+            proxy_pass http://localhost:8080;
+        }
+        ssl_certificate /usr/local/nginx/cert/sediment.top_bundle.crt; #请填写证书文件的路径
+        ssl_certificate_key /usr/local/nginx/cert/sediment.top.key; #请填写私钥文件的路径
+        ssl_session_timeout 5m;
+        ssl_protocols TLSv1.2 TLSv1.3;
+        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
+        ssl_prefer_server_ciphers on;
+        
+        access_log  /www/wwwlogs/access.log;
+    }
+```
+
+## 问题记录
+* 宝塔面板中相同镜像的不同版本不能同时创建compose项目，需要删除到唯一，才能创建项目
