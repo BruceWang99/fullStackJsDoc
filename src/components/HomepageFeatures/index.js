@@ -40,7 +40,7 @@ const FeatureList = [
     ),
   },
   {
-    title: '全栈开发流程和工具',
+    title: '全干开发流程和工具',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
@@ -49,7 +49,7 @@ const FeatureList = [
     ),
   },
   {
-    title: '全栈性能优化和安全',
+    title: '全干性能优化和安全',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>

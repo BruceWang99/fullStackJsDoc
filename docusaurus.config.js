@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '全栈JS工程师修炼笔记',
+  title: '全干JS工程师修炼笔记',
   tagline: '构建知识体系，记录开发历程',
   favicon: 'img/favicon.ico',
 
