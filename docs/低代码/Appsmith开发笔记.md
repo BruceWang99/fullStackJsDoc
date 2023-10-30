@@ -38,8 +38,8 @@ server
         location / {
             proxy_pass http://localhost:8080;
         }
-        ssl_certificate /usr/local/nginx/cert/sediment.top_bundle.crt; #请填写证书文件的路径
-        ssl_certificate_key /usr/local/nginx/cert/sediment.top.key; #请填写私钥文件的路径
+        ssl_certificate /usr/local/nginx/cert/www.test.com_bundle.crt; #请填写证书文件的路径
+        ssl_certificate_key /usr/local/nginx/cert/www.test.com.key; #请填写私钥文件的路径
         ssl_session_timeout 5m;
         ssl_protocols TLSv1.2 TLSv1.3;
         ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
