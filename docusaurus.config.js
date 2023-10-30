@@ -88,7 +88,7 @@ const config = {
             position: 'left',
             label: '知识库',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: '自媒体', position: 'left'},
           {
             href: 'https://github.com/BruceWang99',
             label: 'GitHub',
