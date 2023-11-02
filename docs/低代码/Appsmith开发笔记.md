@@ -4,16 +4,24 @@
 
 ### 小程序组件开发流程
 
+#### offline开发
+
 + CLI 命令生成Widget文件夹结构
 
 ```
 cd app/client && yarn generate:widget (这个命令好像只支持web版本的)
 ```
 这个命令目前没有直接放到小程序目录，需要手动移动到app/client/src/widgets/taro目录
+放置目录： app/client/src/widgets/taro/
++ 在offline注册组件，显示在组件配置中
+注册链接： app/client/src/utils/WidgetRegistry.tsx
 
+
+#### 小程序内开发
++ 小程序组组件开发路径
+app/taro/src/widgets/taro/
 + 小程序组件注册
 app/taro/src/utils/WidgetRegistry.tsx 这个目录引入新组件注册
-
 
 
 ## 线上部署
