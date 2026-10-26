@@ -4,56 +4,56 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'HTML、CSS常用',
+    title: '前端工程基础',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        覆盖基础布局和样式开发
+        HTML / CSS / JS / TS / React / Vue，夯实前端根基。
       </>
     ),
   },
   {
-    title: 'JavaScript基础和高级语法特性',
+    title: 'Node.js 与服务端',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        打通前后端边界，掌握服务端、数据库与部署。
+      </>
+    ),
+  },
+  {
+    title: 'AI 工程实践',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        夯实前端开发基础
+        Prompt、RAG、Agent、LLM API 接入与产品化落地。
       </>
     ),
   },
   {
-    title: 'Node.js服务端技术栈',
+    title: 'AI 辅助研发',
+    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    description: (
+      <>
+        Copilot / Cursor / 自动化工作流，把 AI 变成日常生产力。
+      </>
+    ),
+  },
+  {
+    title: '工程化与性能优化',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        打通前后端边界
+        构建、监控、安全与性能调优，交付稳定可上线的应用。
       </>
     ),
   },
   {
-    title: '数据库技术栈',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        把握数据管理和使用
-      </>
-    ),
-  },
-  {
-    title: '全干开发流程和工具',
+    title: '产品孵化与写作',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        RESTful API设计、Webpack、Git版本控制、测试、部署等
-      </>
-    ),
-  },
-  {
-    title: '全干性能优化和安全',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        构建稳定安全应用
+        小产品从 0 到 1，记录真实开发历程与踩坑复盘。
       </>
     ),
   },
